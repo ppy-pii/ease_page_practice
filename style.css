@@ -10,3 +10,24 @@ header {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+
+
+.title{
+    height: 100vh;              /* 画面いっぱい */
+    display: flex;
+    align-items: center;        /* 縦中央 */
+    justify-content: center;    /* 横中央 */
+    background: #f5f5f5; 
+}
+
+.section {
+  padding: 120px 20px;        /* 上下余白大きめ */
+  max-width: 900px;
+  margin: 0 auto;
+  scroll-snap-align: start;     /*スクロールスナップ*/
+}
+
+/*スクロールスナップ*/
+html {
+  scroll-snap-type: y mandatory;
+}
