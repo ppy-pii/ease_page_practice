@@ -11,9 +11,22 @@ header {
     padding-bottom: 32px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+.sns-list {
+  list-style: none;      /* ●を消す */
+  padding: 0;
+  margin: 0;
+  display: flex;         /* 横並び */
+  gap: 20px;             /* 間隔 */
+}
+
+.sns-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.sns-list a:hover {
+  opacity: 0.6;
 }
 
 .title{
