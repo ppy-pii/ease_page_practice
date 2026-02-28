@@ -17,6 +17,7 @@ header {
   margin: 0;
   display: flex;         /* 横並び */
   gap: 20px;             /* 間隔 */
+  border: 1px solid rgba(0,0,0,0.1);
 }
 
 .sns-list a {
@@ -42,6 +43,7 @@ header {
   max-width: 900px;
   margin: 0 auto;
   scroll-snap-align: start;     /*スクロールスナップ*/
+  border: 1px solid rgba(0,0,0,0.1);
 }
 
 /*スクロールスナップ*/
