@@ -11,6 +11,10 @@ header {
     padding-bottom: 32px;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
 
 .title{
     height: 100vh;              /* 画面いっぱい */
