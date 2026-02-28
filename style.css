@@ -16,7 +16,7 @@ header {
   padding: 0;
   margin: 0;
   display: flex;         /* 横並び */
-  gap: 20px;             /* 間隔 */
+  gap: 16px;             /* 間隔 */
 }
 
 .sns-list a {
@@ -24,6 +24,27 @@ header {
   color: #333;
   font-weight: 500;
   border: 1px solid rgba(0,0,0,0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .sns-list {
+    flex-direction: column;   /* 縦並びにする */
+    gap: 12px;
+  }
+
+  .sns-list a {
+    width: 100%;
+    padding: 14px 0;          /* 高さをしっかり確保 */
+    font-size: 18px;
+  }
 }
 
 .sns-list a:hover {
@@ -42,11 +63,5 @@ header {
   padding: 120px 20px;        /* 上下余白大きめ */
   max-width: 900px;
   margin: 0 auto;
-  scroll-snap-align: start;     /*スクロールスナップ*/
   border: 1px solid rgba(0,0,0,0.1);
-}
-
-/*スクロールスナップ*/
-html {
-  scroll-snap-type: y mandatory;
 }
