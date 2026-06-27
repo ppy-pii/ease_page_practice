@@ -10,11 +10,61 @@
 </head>
 <body>
   <!-- タイトル -->
-  <header class="title"><h1>FLO's Website</h1></header>
+  <header class="title">
+    <!--  <h1>FLO's Website</h1> -->
+
+    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+      <defs>
+        <path id="top-path" d="M 63,150 a 80,80 0 1,1 173,0"/>
+        <path id="bottom-path" d="M 50,150 a 100,100 0 1,0 200,0"/>
+        <clipPath id="img-clip">
+          <circle cx="150" cy="150" r="68"/>
+        </clipPath>
+      </defs>
+
+      <!-- 外枠の円 -->
+      <circle cx="150" cy="150" r="115" fill="#ffffff" stroke="#bfb49c" stroke-width="8"/>
+
+      <!-- 上テキスト -->
+      <text font-size="25" font-weight="700" font-family="sans-serif" fill="#7f984e"
+            font-weight="500" letter-spacing="2">
+        <textPath href="#top-path" startOffset="50%" text-anchor="middle">
+          FLO's Website
+        </textPath>
+      </text>
+
+      <!-- 下テキスト -->
+      <text font-size="22" font-weight="500" font-family="sans-serif" fill="#7f984e"
+            font-weight="400" letter-spacing="1.5">
+        <textPath href="#bottom-path" startOffset="50%" text-anchor="middle">
+          for self-introduction
+        </textPath>
+      </text>
+
+      <!-- 中央画像（透過PNG対応） -->
+      <image
+        href="icon_coffee.png"
+        x="82" y="82" width="136" height="136"
+        clip-path="url(#img-clip)"
+        preserveAspectRatio="xMidYMid slice"/>
+    </svg>
+
+    <div class="header-text">
+      <p>Coffee</p>
+      <p>Black Tea</p>
+      <p>macaron</p>
+      <p>Animal Crossing</p>
+      <p>Apex</p>
+      <p>Teddy bear</p>
+      <p>Classical Loliita</p>
+      <p>antique</p>
+      <p>English practicing</p>
+    </div>
+  </header>  
   <!-- セクション -->
   <section class="section">
   <h2>ABOUT</h2>
-    <p>Name : Flo<br>Like : Coffee, Apex, Animal Crossing, BL</p>
+    <ul>Name : Flo</ul>
   </section>
 
   <section class="section">
@@ -23,7 +73,7 @@
       <li><a href="https://x.com/umi_flo_vrc" target="_blank">X</a></li>
       <li><a href="https://www.instagram.com/floyd_umi/" target="_blank">Instagram</a></li>
       <li><a href="https://vrchat.com/home/user/usr_62853e77-61f5-4e7b-936c-ecb9b67a9662" target="_blank">VRChat</a></li>
-      <li><a href="https://booth.pm/wish_list_names/830TPjZA" target="_blank">ほしいも</a></li>
+      <li><a href="https://booth.pm/wish_list_names/830TPjZA" target="_blank">Booth list</a></li>
     </ul>
     </section>
 </body>
