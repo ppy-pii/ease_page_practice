@@ -52,7 +52,7 @@ header {
 }
 
 .title{
-    height: 100vh;              /* 画面いっぱい */
+    /*height: 100vh;              /* 画面いっぱい */
     display: flex;
     align-items: center;        /* 縦中央 */
     justify-content: center;    /* 横中央 */
