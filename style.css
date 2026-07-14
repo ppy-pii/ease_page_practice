@@ -5,7 +5,6 @@ body{
    background-color: #dcdfe6;
 }
 
-
 header {
   background-color: #dcdfe6;
   padding-top: 32px;
@@ -78,8 +77,6 @@ header {
 .sns-list a:hover {
   opacity: 0.6;
 }
-
-
 
 .section {
   padding: 120px 20px;        /* 上下余白大きめ */
